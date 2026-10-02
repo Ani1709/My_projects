@@ -1,0 +1,199 @@
+/* =====================================================
+   BASIC PAGE STYLING
+   ===================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: darkblue;
+}
+
+
+/* =====================================================
+   SKIP TO MAIN CONTENT
+   ===================================================== */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+    background-color: darkblue;
+
+    /* Requirement 4 */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Requirement 5
+   Descendent selector:
+   Only the image inside nav is affected.
+*/
+nav img {
+    width: 10%;
+}
+
+
+/*
+   Requirement 3:
+   Existing li styling has been commented out.
+
+li {
+    display: inline-block;
+    width: 150px;
+}
+*/
+
+
+/* Navigation list */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+    background-color: #f2f2f2;
+    font-size: 18px;
+    padding: 30px;
+    min-height: 500px;
+}
+
+
+/* =====================================================
+   GRID
+   ===================================================== */
+
+/*
+   Requirement 6:
+   Two-column grid.
+*/
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 40% 40%;
+
+    /*
+       Requirement 8:
+       Adjust the position of the grid items.
+    */
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+}
+
+
+/*
+   Requirement 7:
+   Descendent selector.
+
+   ONLY images inside .grid are affected.
+*/
+
+.grid img {
+    width: 100%;
+}
+
+
+/* =====================================================
+   FLEX
+   ===================================================== */
+
+/*
+   Requirement 9:
+   Flex class uses flexbox.
+*/
+
+.flex {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    gap: 20px;
+}
+
+
+/*
+   Images inside the flex section.
+*/
+
+.flex img {
+    width: 300px;
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   PARAGRAPH
+   ===================================================== */
+
+p {
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background-color: lightblue;
+    padding: 15px;
+}
